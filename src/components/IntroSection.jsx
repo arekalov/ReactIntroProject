@@ -14,6 +14,9 @@ export default function IntroSection({ selected, onChange }) {
             <Button isSelected={"feedback" === selected} onClick={() => onChange("feedback")}>
                 Обратная связь
             </Button>
+            <Button isSelected={"effects" === selected} onClick={() => onChange("effects")}>
+                Эффекты
+            </Button>
         </section>
     );
 }

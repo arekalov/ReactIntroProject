@@ -5,6 +5,7 @@ import {TeachingEasySection} from "./components/maintab/TeachingEasySection.jsx"
 import IntroSection from "./components/IntroSection.jsx";
 import {useState} from "react";
 import {FeedbackSection} from "./components/feedbacktab/FeedbackSection.jsx";
+import {EffectSection} from "./components/effecttab/EffectSection.jsx";
 
 export default function App() {
     const [tab, setTab] = useState("main")
@@ -30,7 +31,12 @@ export default function App() {
                     </>
                 )
                 }
-
+                {tab === "effects" && (
+                    <>
+                        <EffectSection/>
+                    </>
+                )
+                }
             </main>
         </>
     )
